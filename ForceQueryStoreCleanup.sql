@@ -10,7 +10,7 @@ Name: ForceQueryStoreCleanup
 Purpose:
 	Uses sized-based cleanup to stagger query store purging during a defined time period set by an administrator.
 	It is recommended to schedule ForceQueryStoreCleanup to run daily outside of business hours.
-	A database is only included if size-based clean is enabled, time-based cleanup is disabled, and query store is in read-write mode.
+	A database is only included if query store is in read-write mode, size-based cleanip is enabled, and time-based cleanup is disabled.
 
 	For example, consider running the procedure with default parameters and processing a database with a 2000 MB max size.
 	The database's max size will be temporarily reduced to 0.5 * 2000 = 1000 MB for the purposes of cleanup.
