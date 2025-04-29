@@ -3,4 +3,5 @@ Automatic time-based and size-based Query Store cleanup can cause transaction lo
 A database is only included if size-based clean is enabled, time-based cleanup is disabled, and query store is in read-write mode.
 
 Tested on SQL Server 2022 and SQL Server 2019 but is likely to work on SQL Server 2017 and SQL Server 2016 as well.
+
 You can read about Microsoft's size-based cleanup here: https://learn.microsoft.com/en-us/sql/relational-databases/performance/manage-the-query-store?view=sql-server-ver16&tabs=ssms#query-store-maximum-size
