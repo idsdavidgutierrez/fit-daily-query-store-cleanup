@@ -21,7 +21,7 @@ Parameters:
 	@SQLCommand - T-SQL command to run as part of the agent job
 	@TimeLimitInSeconds - the number of seconds to wait before stopping the agent job, if necessary
 */
-CREATE   PROCEDURE [RunStatementSyncWithTimeLimit] (
+CREATE OR ALTER PROCEDURE [RunStatementSyncWithTimeLimit] (
 	@JobDescription NVARCHAR(50),
 	@SQLCommand NVARCHAR(4000),
 	@TimeLimitInSeconds INT
